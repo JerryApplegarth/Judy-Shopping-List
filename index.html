@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Jerry Applegarth">
+        <meta name="description" content="Learning HTML">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/img/note.png" type="image/x-icon">
+        <!-- Google Font -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800;900&family=Roboto:wght@400;700;900&display=swap"
+            rel="stylesheet">
+
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+            integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <title>Shopping List</title>
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="/styles.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <header>
+                <img src="/img/note.png" alt="" />
+                <h1>Judy's Shopping List</h1>
+            </header>
+            <form id="item-form">
+                <div class="form-control">
+                    <input type="text" class="form-input" id="item-input" name="item" placeholder="Enter Item" />
+                </div>
+                <div class="form-control">
+                    <button type="submit" class="btn">
+                        <i class="fa-solid fa-plus"></i> Add Item
+                    </button>
+                </div>
+            </form>
+        
+            <div class="filter">
+                <input type="text" class="form-input-filter" id="filter" placeholder="Filter Items" />
+            </div>
+        
+            <ul id="item-list" class="items">
+                <li>
+                    Apples
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li>
+                    Orange Juice
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li>
+                    Oreos
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+                <li>
+                    Milk
+                    <button class="remove-item btn-link text-red">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </li>
+            </ul>
+        
+            <button id="clear" class="btn-clear">Clear All</button>
+        </div>
+
+
+
+        <script type="module" src="/script.js"></script>
+    </body>
+
+</html>
