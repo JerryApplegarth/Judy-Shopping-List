@@ -55,7 +55,21 @@ function clearItems() {
         
     }
     checkUI();
+}// Filter Items
+function filterItems(e) {
+    const filter = e.target.value.toLowerCase();
+    const items = document.querySelectorAll('li');
+    Array.from(items).forEach(function(item) {
+        const itemText = item.firstChild.textContent;
+        if (itemText.toLowerCase().indexOf(filter) != -1) {
+            item.style.display = 'flex';
+        } else {
+            item.style.display = 'none';
+        }
+    });
 }
+
+
 
 // Check UI to see if there are items in the list
 function checkUI() {
@@ -69,10 +83,12 @@ function checkUI() {
     }
 }
 
+
 // Event Listeners
 itemForm.addEventListener('submit', addItem);
 itemList.addEventListener('click', removeItem);
 clearBtn.addEventListener('click', clearItems);
+itemFilter.addEventListener('input', filterItems);
 
 // Running CheckUI in the global scope
 checkUI();
