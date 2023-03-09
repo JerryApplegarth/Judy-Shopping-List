@@ -34,6 +34,10 @@ header h1 {
     margin: 30px auto;
     padding: 20px;
 }
+.edit-mode {
+    background-color: #091dd1;
+    color: rgb(236, 236, 250);
+}
 
 /* Form & Input */
 .form-input {
@@ -60,7 +64,7 @@ header h1 {
 
 /* Buttons */
 .btn {
-    background-color: #1b3dad;
+    background-color: #091dd1;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -69,7 +73,7 @@ header h1 {
 }
 
 .btn:hover {
-    background-color: #444;
+    background-color: #040d5c;
 }
 
 .btn-link {
@@ -85,7 +89,7 @@ header h1 {
     margin-top: 20px;
     width: 100%;
     font-size: 16px;
-    background-color: #1b3dad;
+    background-color: #091dd1;
     color: #d4d8ee;
     border: 1px solid #ccc;
     border-radius: 5px;
@@ -94,7 +98,7 @@ header h1 {
 }
 
 .btn-clear:hover {
-    background-color: #0a015f;
+    background-color: #3f2bf1;
 }
 
 .text-red {
